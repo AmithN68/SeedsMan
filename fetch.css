@@ -1,0 +1,445 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.sectionBlock{
+    width: 100%;
+    height: 220vh;
+}
+input{
+    padding: 0.8rem 2.8rem;
+}
+.logo{
+    width:"10rem";
+    height:"3rem";
+}
+.sectionBlock > article{
+    width: 100%;
+    height: inherit;
+}
+.sectionBlock > article > .aside > ul{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sectionBlock > article .aside2 > ul > li >ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.aside1{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+ul > li{
+    list-style: none;
+}
+.aside2{
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(236, 234, 234);
+}
+.aside3{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+
+.aside2 >ul > li >ul >li{
+    margin: 0rem 1.8rem;
+}
+.span{
+    width: 2.6rem;
+    height: 2.8rem;
+    color: white;
+    font-size: 2rem;
+    background-color: #739536;
+    position: relative;
+    top: 0.74rem;
+    right: 2.9rem;
+}
+article > h1{
+    margin-top: 3.3rem;
+    margin-left: 13rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.span1{
+    position: relative;
+    top: 0.4rem;
+}
+.aside3 li{
+    font-weight: 600;
+}
+.aside3{
+    box-shadow: 0.7rem 0.7rem 1.5rem 0rem rgb(244, 241, 241);
+}
+
+.carts{
+    position: relative;
+}
+.carts > #count{
+    position: absolute;
+    top: -0.72rem;
+    right: 0.45rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100%;
+    padding: 0.1rem 0.2rem;
+}
+
+.trolley {
+    font-size: 2rem;
+    padding: 0rem 1rem;
+    font-weight: 500;
+}
+
+
+/* !gallary */
+
+.sectionBlock > article > #divBlock{
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.8rem;
+}
+.division{
+    width: 80%;
+    margin: 0 auto;
+    height: 55vh;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    /* background-color: bisque; */
+}
+.division img{
+    width: 20vw;
+    height: 40vh;
+}
+#quantity{
+    display: none;
+}
+.division p,h4,h2,button{
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.division:hover  p{
+    visibility: hidden;
+}
+.division button{
+    padding: 1rem 2.5rem;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.division button:hover{
+    background-color: #739536;
+    border: 2px solid transparent;
+    color: white;
+}
+
+
+/* !hovering effect */
+.hovering h4{
+    float: left;
+}
+.hovering{
+    width: 20vw;
+    height: 13vh;
+    background-color: white;
+    position: absolute;
+    bottom: 8rem;
+    padding: 0.8rem;
+    box-shadow: 0px 15px 15px 0px rgb(235, 231, 231);
+    border-bottom: 5px solid rgb(185, 180, 180);
+    visibility: hidden;
+    border-radius: 0.6rem;
+}
+.hovering button{
+    width: 5rem;
+    padding: 0.8rem;
+    margin-right: 1.25rem;
+    border: 2px solid lightgray;
+}
+.hovering button:hover{
+    border: 2px solid #68934b;
+    background-color: transparent;
+    color: black;
+    padding: 0.8rem;
+}
+.division:hover .hovering{
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    transition-duration: 5s;
+}
+
+.toasting{
+    color: black;
+    animation-name: anime;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    margin-top: -17rem;
+    position: absolute;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.8rem;
+}
+
+@keyframes anime{
+    0%{
+        background-color: #f8f8f8;
+        right: 5%;
+        top: 0%;
+        margin-top: 12.5rem;
+    }
+    50%{
+        background-color: #f8f8f8;
+        right: 5%;
+        top: 0%;
+    }
+    100%{
+        background-color: #f8f8f8;
+        right: 5%;
+        top: 0%;
+        margin-top: 14.2rem;
+    }
+}
+
+
+
+
+
+/* !media  */
+@media screen and (max-width:600px) {
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.sectionBlock{
+    width: 100%;
+    height: 100%;
+}
+input{
+    padding: 0.8rem;
+    width: 18rem;
+    margin: auto;
+}
+.logo{
+    width:"100%";
+    height:"100%";
+}
+.sectionBlock > article{
+    width: 100%;
+    height: inherit;
+}
+.sectionBlock > article > .aside > ul{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sectionBlock > article .aside2 > ul > li >ul{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.aside1{
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+ul > li{
+    list-style: none;
+}
+.aside2{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(236, 234, 234);
+}
+.aside3{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aside2 >ul > li >ul >li{
+    margin: 0rem 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.span{
+    width: 2.6rem;
+    height: 2.8rem;
+    color: white;
+    font-size: 2rem;
+    background-color: #739536;
+    position: relative;
+    top: 0.74rem;
+    right: 2.9rem;
+}
+article > h1{
+    width: 100%;
+    margin-top: 3.3rem;
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+.span1{
+    position: relative;
+    top: 0.4rem;
+}
+.aside3 li{
+    font-weight: 600;
+}
+.aside3{
+    box-shadow: 0.7rem 0.7rem 1.5rem 0rem rgb(244, 241, 241);
+}
+
+.carts{
+    position: relative;
+}
+.carts > #count{
+    position: absolute;
+    top: -0.72rem;
+    right: 0.5rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100%;
+    padding: 0.1rem 0.3rem;
+}
+
+.trolley {
+    font-size: 2rem;
+    padding: 0rem 1rem;
+    font-weight: 500;
+}
+
+
+/* !gallary */
+
+.sectionBlock > article > #divBlock{
+    width: 100%;
+    height: 750vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 1.8rem; */
+}
+.division{
+    width: 80%;
+    margin: 0 auto;
+    height: 55vh;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.division img{
+    width: 100%;
+    margin: 0 auto;
+    height: 50vh;
+}
+.quantity{
+    display: none;
+}
+.division p,h4,h2,button{
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.division:hover  p{
+    visibility: hidden;
+}
+.division button{
+    padding: 1rem 2.5rem;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.division button:hover{
+    background-color: #739536;
+    border: 2px solid transparent;
+    color: white;
+}
+
+
+/* !hovering effect */
+.hovering h4{
+    float: left;
+}
+.hovering{
+    width: 100%;
+    height: 13vh;
+    background-color: white;
+    position: absolute;
+    bottom: 8rem;
+    padding: 0.8rem;
+    box-shadow: 0rem 1rem 1rem 0rem rgb(235, 231, 231);
+    border-bottom: 5px solid rgb(185, 180, 180);
+    visibility: hidden;
+    border-radius: 0.6rem;
+}
+.hovering button{
+    width: 4.5rem;
+    padding: 0.5rem;
+    margin-right: 20px;
+    border: 2px solid lightgray;
+}
+.hovering button:hover{
+    border: 2px solid #68934b;
+    background-color: transparent;
+    color: black;
+    padding: 0.8rem;
+}
+.division:hover .hovering{
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    transition-duration: 5s;
+}
+}
